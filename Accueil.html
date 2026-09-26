@@ -12,18 +12,43 @@
 <body>
     
     <header class="header">
+
         <img src="Logo.png" alt="Logo" class="logo">
         <nav class="menu">
-        <a href="#" class="page actif">Accueil</a>
-        <a href="#" class="page">Page 2</a>
-        <a href="#" class="page">Page 3</a>
-        <a href="#" class="page page4">Page 4</a>
+        <a href="Accueil.html" class="page actif" data-target="accueil">Accueil</a>
+        <a href="page 2.html" class="page" data-target="page2">Page 2</a>
+        <a href="page 3.html" class="page" data-target="page3">Page 3</a>
+        <a href="page 4.html" class="page" data-target="page4">Page 4</a>
+        </nav>
 
-        </nav>   
     </header>
-    <section class="banniere">
-    <img src="banniere.jpg" alt="Banniere d'accueil" class="banniere-img">
+    <main class="groupe-banniere">
+        <section id="accueil" class="section-page page-actif">
+         <div class="banniere">
+                <img src="banniere.jpg" alt="Banniere d'accueil" class="banniere-img">
+                <div class="banniere-texte">
+                <h1>webmaster qui sont bg: moi et theo</h1>
+                <p>notre site > site du lycée</p>
+            </div>
+        <div>
+            
+        </section>
+        
+    </main>
+
+    <section id="page2" class="section-page page-masquee">
+
     </section>
 
+    <section id="page3" class="section-page page-masquee">
+        
+    </section>
+
+    <section id="page4" class="section-page page-masquee">
+        
+    </section>
+
+
+    <script src="script.js"></script>
 </body>
 </html>

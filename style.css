@@ -2,65 +2,94 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     font-family: "Manrope", sans-serif;
     min-height: 100vh;
     background: linear-gradient(to bottom, #ffffff 40%, rgb(146, 187, 211) 60%);
 }
 .menu {
     display: flex;
-    justify-content: right;
-    gap: 35px;
-    background-color: #ffffff;
-    padding: 15px;
+    justify-content: center;
+    gap: 20px;
     
 }
 .page {
     text-decoration: none;
     color: #555555;
-    font-size: 20px;
-    margin: 8px 20px;
-    
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 .page:visited {
     color: #555555;
 }
+.page.actif,
 .page:hover {
     color: rgb(0, 122, 192);
 }
 
-.page.actif,
-.page.actif:visited {
-    color: rgb(0, 122, 192);
-}
-.page.page4{
-    margin-right: 200px;
-}
+
+
+
 .header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2px 30px;
-
 }
 .logo {
-    width: 185px;
+    width: 160px;
+    height: auto;
 }
 .banniere{
-    width: 100%;
-    height: 500px;
+    position: relative;
+    width: 97%;
+    margin: 0 auto;
+    height: 480px;
     overflow: hidden;
-    
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); 
 }
 
 .banniere-img{
-    margin-left: 27.5px;
-    width: 97%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     display: block;
-    
+    filter: brightness(0.75);
+    transition: filter 0.3s ease, transform 0.5s ease;
 
+}
+.banniere:hover .banniere-img {
+    filter: brightness(0.85);
+    transform: scale(1.02);
+}
 
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.banniere-texte{
+    position: absolute;
+    top: 30%;  
+    left: 50%;     
+    transform: translate(-50%, -50%); /* Merci internet */
+    text-align: center;
+    color: rgb(210, 231, 241);    
+    width: 80%;
+}
+
+.banniere-texte h1 {
+    margin: 0 0 10px 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.banniere-texte p {
+    margin: 0;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
